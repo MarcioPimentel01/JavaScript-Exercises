@@ -1,0 +1,60 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(233, 239, 250);
+
+}
+
+h1{
+    color: darkblue;
+    font-size: 3em; 
+
+}
+
+form{
+    background-color: aliceblue;
+    text-align: center;
+    max-width: 500px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px; 
+
+}
+
+#text-box {
+    width: 50%;
+    text-align: center;
+    font-size: 3em;
+    border-style: double;
+    border-radius: 10px;
+}
+#select{
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-weight: bolder;
+}
+label{
+    margin-top: 20px;
+    font-size: 1.5em;
+}
+
+button{
+    margin-top: 25PX;
+    background-color: darkblue;
+    font-size: 1.5em;
+    border: 2px;
+    border-radius: 10px;
+    border-color: aliceblue;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: hsl(240, 100%, 27%, 70%);
+}
+
+#result{
+    font-size: 1.75em;
+    font-weight: bolder;
+}

@@ -41,3 +41,30 @@ function noNumberConversion () {
 
 
 }
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+const _msg03 = document.getElementById(`display-message03`)
+const _btnmsg03 = document.querySelector(`.comic-button`)
+
+
+let x = `Pizza`
+let y = `Pizza`
+let z = `Pizza`
+
+x = Number(x)
+y = String(y)
+z = Boolean(z)
+
+console.log(x, typeof x)
+console.log(y, typeof y)
+console.log(z, typeof z)
+
+_btnmsg03.addEventListener(`click`, () => {
+    console.log(`ok`)
+    _msg03.innerHTML = `<p> <b>${x},</b> Displays as Not a number, but the "typrof" still displays as a <b>"number"</b>
+    <p> <b>${y},</b> Still displays as a string, because <b>"Pizza"</b> is a string,
+    <p> <b>${z},</b> displays as a <b>"True/Boolean"</b>,    `
+})
+

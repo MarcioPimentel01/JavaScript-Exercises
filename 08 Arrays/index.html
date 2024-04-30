@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>07-Data Type Conversion</title>
+    <!-- bootstrap -->
+    <!-- Personal CSS -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1 style="text-align: center;">07-Data Type Conversion</h1>
+    <h1>Hello</h1>
+        <p>Hey there, fellow JavaScript explorer! I'm Marcio Pimentel, on an exciting journey through the vast 
+            realm of JavaScript! 🚀 These lessons may be in the early stages, but trust me, the adventure is just beginning! <br><br>
+        </p>
+
+        <h1>Number() constructor</h1>
+            <p>The Number() constructor creates Number objects. When called as a function, it returns primitive values of type Number.</p>
+            <div>
+                <h1>Example with <b>Number()</b></h1>
+                <label for="NumberConversion">Number() is a built-in JavaScript function used to convert a value to a number data type. It accepts a single argument and attempts to convert it into a numeric value. If the argument cannot be converted into a valid number, it returns NaN (Not-a-Number).</label><br><br>   
+                <input type="character" name="NumberConversion" id="Number-Conversion">
+                    <div>
+                        <button class="convert-to-number">Submit</button><br><br>
+                    </div>
+            </div>  
+            <div id="display-message01" >
+                <!-- display answer here -->
+            </div>
+        </div> <br><br><hr>
+
+        <div>
+            <h1>Example without <b>Number()</b></h1>
+            <label for="noConversion">Depending on the input value, if it's a string, JavaScript might interpret the operation as string concatenation rather than arithmetic addition.</label><br><br>   
+            <input type="character" name="noConversion" id="no-Conversion">
+                <div>
+                    <button class="no-convert-to-number">Submit</button><br><br>
+                </div>
+        </div>  
+        <div id="display-message02" >
+            <!-- display answer here -->
+        </div>
+    </div> <br><br><hr>
+    <h1>Let's see what happens when we try to apply <b>Number() to other primitive types</b></h1>
+    <p>Click the Button to see what happens when we use the string "Pizza", and try to convert in order to <b>"Number()", "String()", and "Boolean()"</b></p>   
+    <pre>       
+    let x = `Pizza`
+    let y = `Pizza`
+    let z = `Pizza`
+    </pre>
+    <p>x = Number(x), y = String(y), z = Boolean(z)</p>
+        <div>
+            <button class="comic-button">Click Me!</button><br><br>
+        </div>
+</div>  
+<div id="display-message03" >
+    <!-- display answer here -->
+</div>
+</div> <br><br><hr>
+
+
+
+
+
+
+
+    <!-- bootstrap script -->
+    <!-- Personal JS -->
+    <script src="./script.js"></script>
+</body>
+</html>

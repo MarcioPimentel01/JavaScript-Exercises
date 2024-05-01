@@ -6,6 +6,7 @@
     <title>09-Arrays Methods</title>
     <!-- bootstrap -->
     <!-- Personal CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -15,48 +16,259 @@
             realm of JavaScript! 🚀 These lessons may be in the early stages, but trust me, the adventure is just beginning! <br><br>
         </p>
 
-        <h1>Why use an array?</h1>
-            <p>If you have a list of items (a list of car names, for example), storing the cars in single variables could look like this:</p>
+        <h1>Array length()</h1>
+            <p>The length property returns the length (size) of an array:</p>
+                <div>
+                    <pre>
+                        <code>
+                            let familyNames = new Array(`Dirceu`, `Vanderli`, `Marcio`, `Monica`, `Jose`, `Diego`, `Laura`)
+
+                            function arrayLength (){
+                                names = familyNames.length
+                                console.log(familyNames[2]) // Outputs Marcio
+                                return names
+                            }
+                            arrayLength()
+
+                            // you can also pass a parameter on you function
+
+                            function getArrayLength(array) {
+                                return array.length;
+                            }
+                            console.log(getArrayLength(familyNames)); // Output: 7
+                        </code>
+                    </pre>
+    
+                </div>
+
+
+        <h1>Array toString()</h1>
+        <p>The length property returns the length (size) of an array:</p>
+        <div>
             <pre>
-                let car1 = `saab`
-                let car2 = `volvo`
-                let car3 = `volkswagen`
-                let car4 = `BMW`
-                let car5 = `Ford`
+                <code>
+                    let familyNames = new Array(`Dirceu`, `Vanderli`, `Marcio`, `Monica`, `Jose`, `Diego`, `Laura`)
+
+                    function arrayToString () {
+                        let string = familyNames.toString()
+                        console.log(string)
+                        return string
+                      }
+                      arrayToString()
+                      
+                      // you can also pass a parameter on you function
+                      
+                      function getArrayToString(array) {
+                          let string = array.toString();
+                          console.log(string);
+                          return string;
+                      }
+                      
+                      getArrayToString(familyNames); // Output: "Dirceu,Vanderli,Marcio,Monica,Jose,Diego,Laura"
+                </code>
             </pre>
-            <p>However, if you want to loop through the cars and find a specifc one? Imagine also that instead of five cars you have 200! 
-                A good solution is and array, because can hold a large amount of values under a single name. And you can access the values by refering the index number.</p>
 
-                <p><b>Creating an array</b></p>
-                <p>const array_name = [item1, item2, ...];     </p>
-                <p>Using our example above, would it be:</p>
-                <p>const array_carBrands = [Saab, volvo, Volskwagen, BMW, Ford];     </p>
-
-                <p><b>You can also create arrays Using the JavaScript Keyword "new"</b></p>
-                <p>When you use the keyword "new" you can create thae array and also asigns values to it.</p><p><b>See sintax bellow:</b></p>
-                
-                <p>const FordModels = new Array("Taurus", "Transit 350", "F-150" )</p>
-                
-                <p><b>Accessing Array Elements</b></p>
-                <p>You access an array element by referring to the, <b>Index number</b></p><p><b>See sintax bellow:</b></p>
-                
-                <p>Using the FordModels array example above</p>
-                <p>let model = FordModels[1]</p>
-                <p><b>console.log</b> - Displays "Transit 350"</p>
-                
-                <p><b>Changing an Array Elements</b></p>
-                <p>This statement changes the value of the first "[0]" element in, <b>FordModels</b></p><p><b>See sintax bellow:</b></p>
-                <p><b>FordModels[0]</b> = "Fusion"</p>
-                <p>That will change <b>"Taurus" to <b>"Fusion"</b></b></p><hr>
+        </div>
 
 
+        <h1>Array at()</h1>
+        <p>The length property returns the length (size) of an array:</p>
+        <div>
+            <pre>
+                <code>
+                    let familyNames = new Array(`Dirceu`, `Vanderli`, `Marcio`, `Monica`, `Jose`, `Diego`, `Laura`)
+
+                    function arrayLength (){
+                        names = familyNames.length
+                        console.log(familyNames[2]) // Outputs Marcio
+                        return names
+                    }
+
+                    // you can also pass a parameter on you function
+
+                    function getArrayLength(array) {
+                        return array.length;
+                    }
+                    console.log(getArrayLength(familyNames)); // Output: 7
+                </code>
+            </pre>
+
+        </div>
+
+        <h1>Array join()</h1>
+        <p>The length property returns the length (size) of an array:</p>
+        <div>
+            <pre>
+                <code>
+                    let familyNames = new Array(`Dirceu`, `Vanderli`, `Marcio`, `Monica`, `Jose`, `Diego`, `Laura`)
+
+                    function arrayLength (){
+                        names = familyNames.length
+                        console.log(familyNames[2]) // Outputs Marcio
+                        return names
+                    }
+
+                    // you can also pass a parameter on you function
+
+                    function getArrayLength(array) {
+                        return array.length;
+                    }
+                    console.log(getArrayLength(familyNames)); // Output: 7
+                </code>
+            </pre>
+
+        </div>
+        <h1>Array pop()</h1>
+        <p>The length property returns the length (size) of an array:</p>
+        <div>
+            <pre>
+                <code>
+                    let familyNames = new Array(`Dirceu`, `Vanderli`, `Marcio`, `Monica`, `Jose`, `Diego`, `Laura`)
+
+                    function arrayLength (){
+                        names = familyNames.length
+                        console.log(familyNames[2]) // Outputs Marcio
+                        return names
+                    }
+
+                    // you can also pass a parameter on you function
+
+                    function getArrayLength(array) {
+                        return array.length;
+                    }
+                    console.log(getArrayLength(familyNames)); // Output: 7
+                </code>
+            </pre>
+
+        </div>
+
+        <h1>Array push()</h1>
+        <p>The length property returns the length (size) of an array:</p>
+        <div>
+            <pre>
+                <code>
+                    let familyNames = new Array(`Dirceu`, `Vanderli`, `Marcio`, `Monica`, `Jose`, `Diego`, `Laura`)
+
+                    function arrayLength (){
+                        names = familyNames.length
+                        console.log(familyNames[2]) // Outputs Marcio
+                        return names
+                    }
+
+                    // you can also pass a parameter on you function
+
+                    function getArrayLength(array) {
+                        return array.length;
+                    }
+                    console.log(getArrayLength(familyNames)); // Output: 7
+                </code>
+            </pre>
+
+        </div>
 
 
-            <div>
-                <h1><b>Press F12 to see some examples on console</b></h1>
-                
+        <h1>Array shift()</h1>
+        <p>The length property returns the length (size) of an array:</p>
+        <div>
+            <pre>
+                <code>
+                    let familyNames = new Array(`Dirceu`, `Vanderli`, `Marcio`, `Monica`, `Jose`, `Diego`, `Laura`)
 
-        
+                    function arrayLength (){
+                        names = familyNames.length
+                        console.log(familyNames[2]) // Outputs Marcio
+                        return names
+                    }
+
+                    // you can also pass a parameter on you function
+
+                    function getArrayLength(array) {
+                        return array.length;
+                    }
+                    console.log(getArrayLength(familyNames)); // Output: 7
+                </code>
+            </pre>
+
+        </div>
+
+
+        <h1>Array unshift()</h1>
+        <p>The length property returns the length (size) of an array:</p>
+        <div>
+            <pre>
+                <code>
+                    let familyNames = new Array(`Dirceu`, `Vanderli`, `Marcio`, `Monica`, `Jose`, `Diego`, `Laura`)
+
+                    function arrayLength (){
+                        names = familyNames.length
+                        console.log(familyNames[2]) // Outputs Marcio
+                        return names
+                    }
+
+                    // you can also pass a parameter on you function
+
+                    function getArrayLength(array) {
+                        return array.length;
+                    }
+                    console.log(getArrayLength(familyNames)); // Output: 7
+                </code>
+            </pre>
+
+        </div>
+
+
+        <h1>Array delete()</h1>
+        <p>The length property returns the length (size) of an array:</p>
+        <div>
+            <pre>
+                <code>
+                    let familyNames = new Array(`Dirceu`, `Vanderli`, `Marcio`, `Monica`, `Jose`, `Diego`, `Laura`)
+
+                    function arrayLength (){
+                        names = familyNames.length
+                        console.log(familyNames[2]) // Outputs Marcio
+                        return names
+                    }
+
+                    // you can also pass a parameter on you function
+
+                    function getArrayLength(array) {
+                        return array.length;
+                    }
+                    console.log(getArrayLength(familyNames)); // Output: 7
+                </code>
+            </pre>
+
+        </div>
+
+
+        <h1>Array concat()</h1>
+        <p>The length property returns the length (size) of an array:</p>
+        <div>
+            <pre>
+                <code>
+                    let familyNames = new Array(`Dirceu`, `Vanderli`, `Marcio`, `Monica`, `Jose`, `Diego`, `Laura`)
+
+                    function arrayLength (){
+                        names = familyNames.length
+                        console.log(familyNames[2]) // Outputs Marcio
+                        return names
+                    }
+
+                    // you can also pass a parameter on you function
+
+                    function getArrayLength(array) {
+                        return array.length;
+                    }
+                    console.log(getArrayLength(familyNames)); // Output: 7
+                </code>
+            </pre>
+
+        </div>
+
+
+
+
 
 
 
@@ -66,6 +278,8 @@
 
     <!-- bootstrap script -->
     <!-- Personal JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
     <script src="./script.js"></script>
 </body>
 </html>

@@ -4,45 +4,116 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>02-Variables</title>
-    <!-- bootstrap -->
-    <!-- Personal CSS -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h1 style="text-align: center;">02-Variables</h1>
-    <h1>Hello</h1>
-        <p>Hey there, fellow JavaScript explorer! I'm Marcio Pimentel, on an exciting journey through the vast 
-            realm of JavaScript! 🚀 These lessons may be in the early stages, but trust me, the adventure is just beginning! <br><br>
+    <h1 style="text-align: center;">02-Variables</h1><hr>
+    <h1></h1>
+        <p>In JavaScript, variables are containers used to store data values. Unlike some other programming languages, 
+            JavaScript variables are dynamically typed, meaning you can assign values of different types to the same 
+            variable.<br><br>
 
-            <b>Picture this:</b> I'm diving deep into old exercises, unraveling the mysteries of code, and adding new 
-            elements like magical buttons that beckon with every click.<br><br>
+            <b>Declaration:</b> Variables in JavaScript are declared using the var, let, or const keywords.<br>
+            <pre>
+                <code>
+                    var x; // Declaring a variable named 'x' using the var keyword
+                    let y; // Declaring a variable named 'y' using the let keyword
+                    const z = 10; // Declaring a constant variable named 'z' and initializing it with a value of 10
+                </code>
+            </pre>
             
-            Join me in this coding odyssey as we weave through the digital landscape, discovering new techniques and 
-            breathing life into our projects, one line of code at a time. So, buckle up, grab your favorite coding snack, 
-            and let's embark on this JavaScript adventure together! 🌟
-        </p>
+            <b>Initialization:</b> Variables can be initialized (assigned a value) at the time of declaration or later in the code.<br>
+            <pre>
+                <code>
+                    var x = 5; // Declaring and initializing a variable named 'x' with a value of 5
+                    let y; // Declaring a variable named 'y'
+                    y = 10; // Initializing variable 'y' with a value of 10                   
+                </code>
+            </pre>
+            
+            <b>Naming:</b> <p>Variable names in JavaScript can consist of letters, digits, underscores, and dollar signs. 
+                They must begin with a letter, underscore, or dollar sign. JavaScript is case-sensitive, so myVar and MyVar 
+                would be considered different variables.</p><br>
+            
+            <b>Scope:</b> <p>JavaScript variables have function scope when declared with var and block scope when declared with let or const. 
+                Variables declared with var are function-scoped, meaning they are visible within the function they are declared in. 
+                Variables declared with let or const are block-scoped, meaning they are visible only within the block they are declared in (e.g., within curly braces {}).</p><br>
+            
+            <b>Hoisting:</b>  <p>In JavaScript, variable declarations are hoisted to the top of their scope. This means you can access a 
+                variable before it's declared, but it will have an initial value of undefined.</p>
+
+            <pre>
+                <code>
+                    console.log(x); // Output: undefined
+                    var x = 5;                                     
+                </code>
+            </pre>
+
+            <p><b>Constants:</b> Variables declared with the const keyword are constants, meaning their value cannot be changed once initialized.</p>
+
+            <pre>
+                <code>
+                    const PI = 3.14;
+                    // PI = 3.14159; // This will cause an error because you cannot reassign a constant variable
+                                                  
+                </code>
+            </pre>
+    
 
         <h1>Open console to see javascript!</h1>
 
        <h2 class="myH2"></h2>
 
-       <button class="comic-button">Click me!</button>
+       <button class="comic-button">Click me!</button> <hr>
 
-        
+       <div>
+        <p>Please see Javascrip below</p>
+        <pre>
+            <code>
+                const _btn = document.querySelector('.comic-button');
+
+                function openConsole() {
+                    _btn.addEventListener(`click`, () => {
+                       alert(`Press F12 to Open Console`)
+                
+                    })
+                }
+                openConsole(); 
+                
+                // Variable = A container that store a value.
+                //             Behaves as if the value it contains
+                
+                //1. declaration    let x;
+                //2. assignment     x = 100;
+                
+                const h2Text = document.querySelector(`.myH2`);
+                
+                let age = 25;
+                let price = 10.99;
+                let gpa = 3.5;
+                
+                console.log(`Your age is ${age}`);
+                console.log(`This price is $${price}`);
+                console.log(`My GPA score is ${gpa}`);
+                
+                console.log(`please invoke the function displayH2, by typing on the console "displayH2()", without the quotes `)
+                
+                function displayH2 () {
+                    // using .innerHTML I'm able to display in a column using the <br> element 
+                    document.querySelector(`.myH2`).innerHTML = `Your age is ${age}<br>`
+                    document.querySelector(`.myH2`).innerHTML += `This price is $${price}<br>`
+                    document.querySelector(`.myH2`).innerHTML += `My GPA score is ${gpa}<br>`
+                }
+            </code>
+        </pre>
+       </div>
 
 
 
-
-
-
-
-
-
-
-
-
-    <!-- bootstrap script -->
-    <!-- Personal JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
     <script src="./script.js"></script>
 </body>
 </html>

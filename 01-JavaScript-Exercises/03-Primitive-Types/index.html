@@ -4,23 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>03-Primitive Types</title>
-    <!-- bootstrap -->
-    <!-- Personal CSS -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h1 style="text-align: center;">03-Primitive types</h1>
-    <h1>Hello</h1>
-        <p>Hey there, fellow JavaScript explorer! I'm Marcio Pimentel, on an exciting journey through the vast 
-            realm of JavaScript! 🚀 These lessons may be in the early stages, but trust me, the adventure is just beginning! <br><br>
+    <h1 style="text-align: center;">03 Primitive types</h1><hr>
+    <h1></h1>
+        <p>
+            Primitive types in JavaScript refer to basic data types that are not objects and do not have methods. There are six primitive data types in JavaScript: <br><br>
 
-            <b>Picture this:</b> I'm diving deep into old exercises, unraveling the mysteries of code, and adding new 
-            elements like magical buttons that beckon with every click.<br><br>
+            <p><b>Number:</b> Represents numeric values, including integers and floating-point numbers.</p>
+                <pre>
+                    <code>
+                        let age = 30;
+                        let height = 5.9;
+                    </code>
+                </pre>
+
+            <p><b>String:</b> Represents sequences of characters, enclosed in single (') or double (") quotes.</p> 
+                <pre>
+                    <code>
+                        let name = "John";
+                        let message = 'Hello, world!';
+                    </code>
+                </pre>
             
-            Join me in this coding odyssey as we weave through the digital landscape, discovering new techniques and 
-            breathing life into our projects, one line of code at a time. So, buckle up, grab your favorite coding snack, 
-            and let's embark on this JavaScript adventure together! 🌟
-        </p>
+            <p><b>Boolean:</b> Represents a logical value, either true or false.</p> 
+                <pre>
+                    <code>
+                        let isStudent = true;
+                        let hasCar = false;
+                    </code>
+                </pre>
+            
+            <p><b>Undefined:</b> Represents a variable that has been declared but has not been assigned a value.</p> 
+                <pre>
+                    <code>
+                        let x;
+                        console.log(x); // Output: undefined
+                    </code>
+                </pre>
+            
+            <p><b>Null:</b> Represents the intentional absence of any value.</p> 
+                <pre>
+                    <code>  
+                        let car = null;
+                    </code>
+                </pre>
+            
+            <p><b>Symbol:</b> (added in ECMAScript 6): Represents a unique and immutable value used as an identifier for object properties. 
+                Symbols are often used as property keys when creating objects to avoid naming conflicts.</p> 
+                <pre>
+                    <code>
+                        const sym1 = Symbol();
+                        const sym2 = Symbol("description");
+                    </code>
+                </pre>
+            <p>Primitive types are immutable, meaning their values cannot be changed after they are created. 
+                When you manipulate a primitive value, you are working directly with the value itself, not a 
+                reference to it. This is in contrast to objects, where you work with references to the object in memory.</p>
+            <p>Understanding primitive types is essential in JavaScript because they form the basis for 
+                storing and manipulating data in your programs. Additionally, knowing the characteristics of each 
+                primitive type helps you write more efficient and effective code.</p>
 
         <h1>Open console to see javascript!</h1>
 
@@ -29,6 +75,132 @@
             <button class="comic-button">Click me!</button>
             <button id="display" class="comic-button">Show JavaScript</button><br><br>
             <div id="variableDisplay" ></div>
+        </div>
+
+        <div>
+            <pre>
+                <code>
+                    const _btn = document.querySelector('.comic-button');
+                    const _btnDisplay = document.getElementById(`display`)
+                    const displayVar = document.getElementById(`variableDisplay`)
+
+                    function openConsole() {
+                        _btn.addEventListener(`click`, () => {
+                        alert(`Press F12 to Open Console`)
+
+                        })
+                    }
+                    openConsole(); 
+
+                    _btnDisplay.addEventListener('click', () => {
+                        displayCode()
+                    });
+
+                    function displayCode() {
+                        displayVar.innerHTML = '';
+
+                        const variables = [
+                            { name: '"one"', value: 64, typeOf: '"number"' },
+                            { name: '"two"', value: `"656302"`, typeOf: '"string"' },
+                            { name: '"three"', value: `"false"`, typeOf: '"boolean"' },
+                            { name: '"four"', value: `"null"`, typeOf: '"null"' },
+                            { name: '"five"', value: `64.55`, typeOf: '"number - float"' },
+                            { name: '"six"', value: `"Howdy!"`, typeOf: '"string"' },
+                            { name: '"seven"', value: `"undefined"`, typeOf: '"undefined"' }
+                        ];
+
+                        variables.forEach(variable => {
+                            const variableDiv = document.createElement('div');
+                            variableDiv.innerText = `If the variable ${variable.name}, has the value ${variable.value}, when we use "typeof" the return should it be ${variable.typeOf}`;
+                            variableDisplay.appendChild(variableDiv);
+                        });
+                    }
+
+                    // Primitive data types include undefined, string, number, boolean and null
+                    // Undefined variables haven't been assigned values yet.
+
+                    let myUndefined;
+
+                    //A string is a series of characters and is surrounded by quotes
+                    const myStringWelcome = 'Hello World, again!'
+                    const myStringPassword = 'P@ssw0rd!@'
+
+                    // A number can be either an integer od a decimal
+                    const myNumberInt = 100
+                    const myNumberDecimal = 100.100
+
+                    // Booleans have only two values: true or false.
+                    const isMyBooleanTrue = true
+                    const isMyBooleanFalse = false;
+
+                    // Null is both a value and type.  It represents the concept of nothing. This differs from undefined, which is an unknown value. Null is known to be nothing.
+                    const myNull = null;
+
+                    // TO check the type of data, use typeof followed by the name of the variable
+                    // logs undefined
+                    console.log(typeof myUndefined);
+
+                    // logs number
+                    console.log(typeof myNumberDecimal);
+
+                    // logs boolean
+                    console.log(typeof isMyBooleanFalse);
+
+                    // logs string
+                    console.log(typeof myStringPassword);
+
+                    // logs null
+                    console.log(typeof myNull);
+
+                    // Pro-tip: JavaScript is loosely typed, so the type is tied to the value held in the variable, not the variable itself!
+                    // Logs number
+                    let myVariable = 33;
+                    console.log(typeof myVariable);
+
+                    // myVariable is reassigned; Logs boolean
+                    myVariable = false;
+                    console.log(typeof myVariable);
+
+
+                    // Exercises.
+
+                    const one = 64;
+                    console.log(`The variable one is` + ' ' + typeof one)
+                    const two = "656302";
+                    console.log(`The variable two is` + ' ' + typeof two)
+                    const three = false;
+                    console.log(`The variable three is` + ' ' + typeof three)
+                    const four = null;
+                    console.log(`The variable four is` + ' ' + typeof four)
+                    let five = 64.55; 
+                    console.log(`The variable five is` + ' ' + typeof five)
+                    let six = "Howdy!";
+                    console.log(`The variable six is` + ' ' + typeof six)
+                    let seven;
+                    console.log(`The variable seven is` + ' ' + typeof seven)
+
+                    // Insert comments to explain what each console log below will log to the console
+                    console.log(typeof one);
+                    console.log(typeof two); 
+                    console.log(typeof three); 
+                    console.log(typeof four); 
+                    console.log(typeof five); 
+                    console.log(typeof six);
+                    console.log(typeof seven);
+
+                    five = "Hello!";
+                    console.log(`The variable five is` + ' ' + typeof five)
+                    six = false;
+                    console.log(`The variable six is` + ' ' + typeof six)
+                    seven = 23;
+                    console.log(`The variable seven is` + ' ' + typeof seven)
+
+                    // Insert comments to explain what each console log below will log to the console
+                    console.log(typeof five);
+                    console.log(typeof six);
+                    console.log(typeof seven);
+                </code>
+            </pre>
         </div>
 
         
@@ -44,8 +216,8 @@
 
 
 
-    <!-- bootstrap script -->
-    <!-- Personal JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
     <script src="./script.js"></script>
 </body>
 </html>

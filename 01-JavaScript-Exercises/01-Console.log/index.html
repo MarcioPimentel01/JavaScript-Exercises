@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>01-Console.log</title>
-    <!-- bootstrap -->
-    <!-- Personal CSS -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h1 style="text-align: center;">01-Console.log</h1>
+    <h1 style="text-align: center;">01 Console.log</h1><hr>
     <h1>Hello</h1>
         <p>Hey there, fellow JavaScript explorer! I'm Marcio Pimentel, on an exciting journey through the vast 
             realm of JavaScript! 🚀 These lessons may be in the early stages, but trust me, the adventure is just beginning! <br><br>
@@ -33,6 +33,50 @@
         <h1 class="MyH1"></h1>
         <p id="MyP"></p>
 
+        <div>
+            <p>Please see code below</p>
+            <pre>
+                <code>
+                const _btn = document.querySelector(`.comic-button`)
+
+                _btn.addEventListener(`click`, () => {
+                    alert(`Please Press F12 to open the console.`)
+                })
+
+                // alert(`Please Open DevTools to see the console`);
+                // alert(`To do so, you need to right click on the page and then click on inspect`);
+
+                console.log(`Hello`);
+                console.log(`I like food`)
+                console.log(`You also have other window() methods, like consfirm!`);
+                console.log(`please invoke the function invokeConfirmMethod, by typing on the console "invokeConfirmMwthod()", without the quotes`)
+
+                function invokeConfirmMwthod() {
+                    const confirmed = confirm(`Do you like Pizza?`)
+                    
+                    if (confirmed) {
+                        alert(`Ohhh Yeahhhh!`)
+                    } else {
+                        alert(`get out of here!`)
+                    }
+                }
+
+                    console.log(`please invoke the function createH1text, by typing on the console "createH1Text()", without the quotes `)
+
+                    function createH1Text () {
+                        document.querySelector(`.MyH1`).textContent = `This title was created dinamically using JavaScript targeting the class with a querySelector`;
+                    }
+
+                    console.log(`please invoke the function createPText, by typing on the console "createPText()", without the quotes `)
+
+                    function createPText () {
+                        document.getElementById(`MyP`).textContent = `This paragraph was created dinamically using JavaScript targeting the ID with a getElementById`;
+                    }
+
+                </code>
+            </pre>
+        </div>
+
         
 
 
@@ -45,9 +89,8 @@
 
 
 
-
-    <!-- bootstrap script -->
-    <!-- Personal JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
     <script src="./script.js"></script>
 </body>
 </html>

@@ -11,7 +11,6 @@ openConsole();
 // Variable = A container that store a value.
 //             Behaves as if the value it contains
 
-
 //1. declaration    let x;
 //2. assignment     x = 100;
 
@@ -25,9 +24,7 @@ console.log(`Your age is ${age}`);
 console.log(`This price is $${price}`);
 console.log(`My GPA score is ${gpa}`);
 
-
 console.log(`please invoke the function displayH2, by typing on the console "displayH2()", without the quotes `)
-
 
 function displayH2 () {
     // using .innerHTML I'm able to display in a column using the <br> element 

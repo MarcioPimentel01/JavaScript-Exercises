@@ -34,10 +34,6 @@ function displayCode() {
     });
 }
 
-
-
-
-
 // Primitive data types include undefined, string, number, boolean and null
 // Undefined variables haven't been assigned values yet.
 

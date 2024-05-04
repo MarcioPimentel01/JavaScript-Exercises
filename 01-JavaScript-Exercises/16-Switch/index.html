@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>16-Switch</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <h1 style="text-align: center;">16 Switch</h1><hr>
+    <h1></h1>
+    <p>The switch statement in JavaScript provides a way to execute different blocks 
+        of code based on the value of an expression. It's an alternative to using multiple 
+        if statements when you need to compare the same value against multiple possible cases.</p>
+        <p>The switch statement and the if-else statement in JavaScript are both used for control flow, 
+            allowing you to execute different blocks of code based on conditions. 
+            However, they have different use cases and syntax:</p>
+            <p>Lets consider the if-else example below:</p>
+    <pre>
+        <code>
+            let day; 
+
+            let day; // The variable 'day' is declared but not initialized, so its value is undefined.
+
+            if (day === 1) { // Check if 'day' is equal to 1.
+                console.log(`Today's Monday`);
+            } else if (day === 2) { // Check if 'day' is equal to 2.
+                console.log(`Today's Tuesday`);
+            } else if (day === 3) { // Check if 'day' is equal to 3.
+                console.log(`Today's Wednesday`);
+            } else if (day === 4) { // Check if 'day' is equal to 4.
+                console.log(`Today's Thursday`);
+            } else if (day === 5) { // Check if 'day' is equal to 5.
+                console.log(`Today's Friday`);
+            } else if (day === 6) { // Check if 'day' is equal to 6.
+                console.log(`Today's Saturday`);
+            } else if (day === 7) { // Check if 'day' is equal to 7.
+                console.log(`Today's Sunday`);
+            } else { // If 'day' doesn't match any of the conditions above, execute this block.
+                console.log(`Invalid Day`);
+            }
+        </code>
+    </pre>
+    <p><b>Switch, </b>uses the following structure</p>
+        <pre>
+            <code>
+                switch (expression) {
+                    case value1:
+                        // Code to execute if expression matches value1
+                        break;
+                    case value2:
+                        // Code to execute if expression matches value2
+                        break;
+                    default:
+                        // Code to execute if expression doesn't match any case
+                }
+                
+            </code>
+        </pre>
+
+    <p>The same code could be write using <b>Switch.</b></p>
+    <p>PLease see below:</p>
+
+    <pre>
+        <code>
+            let day; // The variable 'day' is declared but not initialized, so its value is undefined.
+
+            switch (day) {
+                case 1: // If our parameter "day" is equal to 1, we execute the code.
+                    console.log(`Today's Monday`);
+                    break;
+                case 2:
+                    console.log(`Today's Tuesday`);
+                    break;
+                case 3:
+                    console.log(`Today's Wednesday`); 
+                    break;
+                case 4:
+                    console.log(`Today's Thursday`); 
+                    break;
+                case 5:
+                    console.log(`Today's Friday`); 
+                    break;
+                case 6:
+                    console.log(`Today's Saturday`); 
+                    break;
+                case 7:
+                    console.log(`Today's Sunday`); 
+                    break;
+                default:
+                    console.log(`Invalid Day`); // This will be executed if "day" doesn't match any of the cases above.
+                    break;
+            }
+        </code>
+    </pre>
+
+    <p><b>Key differences:</b></p>
+        <ol>
+            <li><b>Expression evaluation:</b></li><br>
+            <ul>
+                <li>switch: The expression is evaluated once, and the corresponding case is executed. 
+                    It's more efficient when you have a large number of cases because it avoids 
+                    repeated evaluations of the expression.</li>
+                <li>if-else: Conditions are evaluated from top to bottom until a true condition is found.</li><br>
+            </ul>
+            <li><b>Case Comparison:</b></li><br>
+            <ul>
+                <li>switch: Cases are compared using strict equality (===). This means that both the 
+                    value and the type of the expression must match the case value for the corresponding 
+                    block to execute.</li>
+                <li>if-else: Conditions can be complex, involving any valid JavaScript expression.</li><br>
+            </ul>
+            <li><b>Fall-through behavior:</b></li><br>
+            <ul>
+                <li>switch: Without a break statement, execution will "fall through" to the next case.
+                    This behavior can be used intentionally to execute multiple cases with the same code block.</li>
+                <li>if-else: Each condition is independent, and execution stops after the first true condition is found.</li><br>
+            </ul>
+        </ol>
+        <p>In summary, use switch when you have a single expression with multiple possible values to compare against, 
+            and use if-else when you need flexibility or have complex conditions.</p>
+
+
+        
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <script src="./script.js" ></script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>13 Math Object</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h1 style="text-align: center;">13 Math Object</h1><hr>
+    <h1></h1>
+        <p>The <b>Math object</b> in JavaScript provides a set of properties and methods for mathematical operations. 
+            It is not a constructor like other objects in JavaScript, so you don't need to create an instance of it. 
+            Instead, you can directly access its properties and methods using dot notation. <br><br>
+        </p>
+        <p>Here are some key points about the <b>Math object:</b></p>
+
+        <h2> Constants:</h2>
+        <p>The Math object provides several mathematical constants, such as Math.PI for the value of pi (π) and Math.E 
+            for the base of the natural logarithm (e).</p>
+
+        <pre>
+            <code>
+                    //Math = a build-in object that provides a collection of properties and methods
+                    let PI = Math.PI
+                    console.log(PI) //Logs 3.141592653589793
+
+                    console.log(Math.E) //Eulers Number, returs 2.718281828459045
+            </code>
+        </pre>
+
+        <p><b>Math.abs():</b> Returns the absolute value of a number.</p>
+            <pre>
+                <code>
+                    console.log(Math.abs(-10)) // Displays 10
+                </code>
+            </pre>
+            <p><b>Math.round():</b> Rounds a number to the nearest integer.</p>
+            <pre>
+                <code>
+                    console.log(Math.round(4.7)) //Displays 5
+                    console.log(Math.round(4.3)) //Displays 4
+                </code>
+            </pre>
+            <p><b>Math.floor():</b> Rounds a number down to the nearest integer.</p>
+            <pre>
+                <code>
+                    console.log(Math.floor(9.9)) //Displays 9
+                    console.log(Math.floor(9.1)) //Displays 9
+                </code>
+            </pre>
+            <p><b>Math.ceil():</b> Rounds a number up to the nearest integer.</p>
+            <pre>
+                <code>
+                    console.log(Math.ceil(9.9)) //displays 10
+                    console.log(Math.ceil(9.1)) // Displays 10
+                </code>
+            </pre>
+            <p><b>Math.random():</b> Returns a random number between 0 (inclusive) and 1 (exclusive).</p>
+            <pre>
+                <code>
+                    console.log(Math.random())// displays a float number in between ) and 1. It is normally used together with Math.Floor
+                    onsole.log(Math.floor(Math.random() * 1000))
+                </code>
+            </pre>
+            <p><b>Math.max():</b> Returns the largest of zero or more numbers.</p>
+            <pre>
+                <code>
+                    console.log(Math.max(10, 20, 30)); // Outputs: 30     
+                </code>
+            </pre>
+            <p><b>Math.min():</b> Returns the smallest of zero or more numbers.</p>
+            <pre>
+                <code>
+                    console.log(Math.min(10, 20, 30)); // Outputs: 10
+                </code>
+            </pre>
+            <p><b>Math.pow():</b> Returns the base to the exponent power, that is, base^exponent.</p>
+            <pre>
+                <code>
+                    console.log(Math.pow(2, 3)); // Outputs: 8 (2 raised to the power of 3)
+                </code>
+            </pre>
+            <p><b>Math.sqrt():</b> Returns the square root of a number.</p>
+            <pre>
+                <code>
+                    console.log(Math.sqrt(16)); // Outputs: 4
+                </code>
+            </pre>
+            <p><b>Math.sin(), Math.cos(), Math.tan():</b> Returns the sine, cosine, and tangent of an angle (given in radians).</p>
+        <pre>
+            <code>
+                console.log(Math.sin(Math.PI/2)); // Outputs: 1 (sine of 90 degrees)
+                console.log(Math.cos(0)); // Outputs: 1 (cosine of 0 degrees)
+                console.log(Math.tan(Math.PI/4)); // Outputs: 0.9999999999999999 (tangent of 45 degrees)
+            </code>
+        </pre>
+        
+        <h1>Open console to see javascript!</h1>
+
+        
+        <div >
+            <button class="comic-button">Click me!</button><br><br>
+            <div id="variableDisplay" ></div>
+        </div>
+
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <script src="./script.js" ></script>
+</body>
+</html>

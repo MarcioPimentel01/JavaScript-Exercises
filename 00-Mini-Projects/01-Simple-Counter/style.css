@@ -1,0 +1,99 @@
+.conteiner-counter{
+    border-radius: 13px;
+    background: linear-gradient(315deg, #dddddd, #ffffff);
+    box-shadow:  -41px -41px 82px #d5d5d5,
+                 41px 41px 82px #ffffff;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 10em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 600px;
+    
+}
+
+/* buttons */
+
+#btn-decrease, 
+#btn-decrease:focus {
+    color: white;
+    font-size: 17px;
+    font-weight: bolder;
+    padding: 10px 25px;
+    border-radius: 0.7rem;
+    background-image: linear-gradient(rgb(255, 148, 134), rgb(236, 19, 19));
+    border: 2px solid rgb(32, 32, 32);
+    border-bottom: 5px solid rgb(17, 16, 16);
+    box-shadow: 0px 1px 3px 0px rgb(236, 19, 19);
+    transform: translate(0, -3px);
+    cursor: pointer;
+    transition: 0.2s;
+    transition-timing-function: linear;
+
+}
+
+#btn-decrease:active {
+  transform: translate(0, 0);
+  border-bottom: 2px solid rgb(255, 0, 0);
+}
+
+#btn-reset, 
+#btn-reset:focus {
+    color: white;
+    font-size: 17px;
+    font-weight: bolder;
+    padding: 10px 25px;
+    border-radius: 0.7rem;
+    background-image: linear-gradient(rgb(162, 204, 158), rgba(31, 204, 25, 0.993));
+    border: 2px solid rgb(32, 32, 32);
+    border-bottom: 5px solid rgb(17, 16, 16);
+    box-shadow: 0px 1px 3px 0px rgb(31, 204, 25);
+    transform: translate(0, -3px);
+    cursor: pointer;
+    transition: 0.2s;
+    transition-timing-function: linear;
+
+}
+
+#btn-reset:active {
+  transform: translate(0, 0);
+  border-bottom: 2px solid rgb(0, 255, 0);
+}
+
+#btn-increase, 
+#btn-increase:focus {
+    color: white;
+    font-size: 17px;
+    font-weight: bolder;
+    padding: 10px 25px;
+    border-radius: 0.7rem;
+    background-image: linear-gradient(rgb(150, 153, 255), rgb(47, 0, 255));
+    border: 2px solid rgb(32, 32, 32);
+    border-bottom: 5px solid rgb(17, 16, 16);
+    box-shadow: 0px 1px 3px 0px rgb(47, 19, 255);
+    transform: translate(0, -3px);
+    cursor: pointer;
+    transition: 0.2s;
+    transition-timing-function: linear;
+
+}
+
+#btn-increase:active {
+  transform: translate(0, 0);
+  border-bottom: 2px solid rgb(0, 0, 255);
+}
+
+.counting-results  {
+    font-size: medium;
+    text-align: left;
+    padding-left: 25px;
+}
+
+div {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: x-large;
+
+    text-align: center;
+}

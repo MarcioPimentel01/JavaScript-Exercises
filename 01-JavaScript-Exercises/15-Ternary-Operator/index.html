@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>15-Ternay-Operator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <h1 style="text-align: center;">15 Ternary Operator</h1><hr>
+    <h1></h1>
+    <p>The ternary operator, often referred to as the conditional operator, is a concise way to write conditional expressions in JavaScript. Its syntax is:</p>
+    <pre>
+        <code>
+            condition ? expr1 : expr2
+        </code>
+    </pre>
+
+    <p><b>Here's how it works:</b></p>
+        <ul>
+            <li>First, the condition is evaluated.</li>
+            <li>If the condition is true, the expression evaluates to expr1.</li>
+            <li> If the condition is false, the expression evaluates to expr2.</li>
+        </ul>
+        <p>It's commonly used when you want to assign a value to a variable based on a simple condition. For example:</p>
+        <pre>
+            <code>
+                let result = (age >= 18) ? "Adult" : "Minor";
+            </code>
+        </pre>
+        <p>This assigns the string "Adult" to the variable result if age is greater than or equal to 18, otherwise, it assigns "Minor".</p>
+        <p>However, the ternary operator is limited to handling binary decisions - it can only choose between two outcomes. 
+            If you need to handle more than two outcomes or more complex conditions, it's often better to use if...else 
+            statements for clarity and readability.</p>
+        
+              
+        <h1>Please type your age</h1>
+            <label for="age">Your age</label>
+            <input type="text" id="age"><br><br>
+            <button class="comic-button" >Submit</button>
+            <p id="message-result"></p><br>
+
+            <h1>Code for the example above</h1>
+            <pre>
+                <code>
+                const _age = document.getElementById(`age`)
+                const _msgResult = document.getElementById(`message-result`)
+                const _btnSubmit  = document.querySelector(`.comic-button`)
+
+                _btnSubmit.addEventListener(`click`, () => {
+                console.log(`ok`)
+                const _age = document.getElementById(`age`).value
+                _age <= 18 ? _msgResult.innerHTML = `You are a minor` : _msgResult.innerHTML = `You are NOT a minor`
+                })
+                </code>
+            </pre>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <script src="./script.js" ></script>
+</body>
+</html>

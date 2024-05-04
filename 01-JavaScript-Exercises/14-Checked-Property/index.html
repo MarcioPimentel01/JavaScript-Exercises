@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>14-Checked Property</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <h1 style="text-align: center;">14 Checked Property</h1><hr>
+    <h1></h1>
+     
+        <h1>Please click on Subscribe and then choose a payment option</h1>
+            <div>
+                <input type="checkbox" id="my-check-box">
+                <label for="my-check-box">Subscribe</label><br><br>
+                
+                <!-- When we add the name="card", we are creating a gorupe that allow us to select the cards individualy -->
+                <input type="radio" name="card" id="radio-visa">
+                <label for="radio-visa">Visa Card</label><br>
+                
+                <input type="radio" name="card" id="radio-master">
+                <label for="radio-master">Mastercard Card</label><br>
+                
+                <input type="radio" name="card" id="radio-amex">
+                <label for="radio-amex">American Express Card</label><br>
+                
+                <input type="radio" name="card" id="radio-discover">
+                <label for="radio-discover">Discover Card</label><br>
+                
+                <input type="radio" name="card" id="radio-paypal">
+                <label for="btn-paypal">PayPal</label><br><br>
+
+            </div>
+
+        <div >
+            <button class="comic-button">Subscribe</button><br><br>
+            <div id="button-submit" ></div>
+
+            <p id="subscribe-status" ></p>
+            <p id="payment-status" ></p>
+        </div>
+        <div>
+            <p>Please see below Javascrip code for the exercise above.</p>
+            <pre>
+                <code>
+        const _checkBoxSub = document.getElementById(`my-check-box`);
+        const _radioVisa = document.getElementById(`radio-visa`)
+        const _radioMaster = document.getElementById(`radio-master`)
+        const _radioAmex = document.getElementById(`radio-amex`)
+        const _radioDiscover = document.getElementById(`radio-discover`)
+        const _radioPaypal = document.getElementById(`radio-paypal`)
+        const _msgSubscribeStatus = document.getElementById(`subscribe-status`)
+        const _msgPaymentStatus = document.getElementById(`payment-status`)
+        const _btnSubmit = document.querySelector(`.comic-button`)
+
+        // event listeners
+
+        _btnSubmit.addEventListener(`click`, () => {
+            console.log(`ok`)
+            subscribeCheck()
+        })
+
+        function subscribeCheck() {
+            if (_checkBoxSub.checked) { // in this case I can also use === true, I'm just using .check, as a reminder that is also an option
+                console.log(`You selected the Subscription option. Please choose a payment type`)
+                _msgSubscribeStatus.innerHTML = `You selected the Subscription option. Please choose a payment type`
+            } else _msgSubscribeStatus.innerHTML = `You did Not selected the Subscription option.`
+
+            //Now an if else statement inside the same function
+
+            if (_radioVisa.checked) {
+                console.log(`The payment type selected is Visa`)
+                _msgPaymentStatus.innerHTML = `The payment type selected is Visa`
+            } else if (_radioMaster.checked) {
+                console.log(`The payment type selected is MasterCard`)
+                _msgPaymentStatus.innerHTML = `The payment type selected is MasterCard`
+                
+            } else if (_radioAmex.checked) {
+                console.log(`The payment type selected is American Express`)
+                _msgPaymentStatus.innerHTML = `The payment type selected is American Express`
+                
+            } else if (_radioDiscover.checked) {
+                console.log(`The payment type selected is Discover`)
+                _msgPaymentStatus.innerHTML = `The payment type selected is Discover`
+                
+            }else if (_radioPaypal) {
+                console.log(`The payment type selected is PayPal`)
+                _msgPaymentStatus.innerHTML = `The payment type selected is Paypal`
+            }       
+        }
+                </code>
+            </pre>
+        </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <script src="./script.js" ></script>
+</body>
+</html>

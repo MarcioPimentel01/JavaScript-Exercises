@@ -23,10 +23,10 @@
         <p><b>charAt(index):</b> Returns the character at the specified index.</p>
         <pre>
             <code>
-                let firstName = 'marcio'
-                firstName.charAt(0)
-                console.log(`It logs the first letter "${firstName.charAt(0) }" from the variable firstName`) //Logs the first letter 'm'
-                _charAt.innerText = `It logs the first letter "${firstName.charAt(0) }" from the variable firstName`
+                let firstName = 'marcio';
+                firstName.charAt(0);
+                console.log(`It logs the first letter "${firstName.charAt(0)}" from the variable firstName`); //Logs the first letter 'm'
+                _charAt.innerText = `It logs the first letter "${firstName.charAt(0)}" from the variable firstName`;              
             </code>
         </pre>
         <button class="btn" id="btncharAt">Click me!</button>
@@ -84,11 +84,12 @@
         <p><b>toLowerCase():</b>  Converts all characters in a string to lowercase.</p>
         <pre>
             <code>
-                console.log(`ok`)
-                let schoolName = `NELSON PIMENTEL QUEIROZ`
-                console.log(schoolName.toLowerCase()) // Logs nelson pimentel queiroz
-                _toLowerCase.innerHTML = `When we use <b>toLowerCase() Method</b> on the string "${schoolName}", 
-                                          we display the same string as lower case, "${schoolName.toLowerCase()}"`
+                console.log('ok');
+                let schoolName = 'NELSON PIMENTEL QUEIROZ';
+                console.log(schoolName.toLowerCase()); // Logs nelson pimentel queiroz
+                _toLowerCase.innerHTML = `When we use &lt;b&gt;toLowerCase() Method&lt;/b&gt; on the string "${schoolName}", 
+                                          we display the same string as lower case, "${schoolName.toLowerCase()}"`;
+             
             </code>
         </pre>
         <button class="btn" id="btnToLowerCase">Click me!</button>
@@ -97,10 +98,11 @@
         <p><b>toUpperCase():</b> Converts all characters in a string to uppercase.</p>
         <pre>
             <code>
-                let grandFatherName = `joaquim rodrigues pimentel`
-                console.log(grandFatherName.toUpperCase()) // Logs JOAQUIM RODRIGUES PIMENTEL
-                _toUpperCase.innerHTML = `When we use <b>toUpperCase() Method</b> on the string "${grandFatherName}", 
-                                          we display the same string as lower case, "${grandFatherName.toUpperCase()}"`
+                let grandFatherName = 'joaquim rodrigues pimentel';
+                console.log(grandFatherName.toUpperCase()); // Logs JOAQUIM RODRIGUES PIMENTEL
+                _toUpperCase.innerHTML = `When we use &lt;b&gt;toUpperCase() Method&lt;/b&gt; on the string "${grandFatherName}", 
+                                          we display the same string as lower case, "${grandFatherName.toUpperCase()}"`;
+                
             </code>
         </pre>
         <button class="btn" id="btnToUpperCase">Click me!</button>
@@ -120,10 +122,11 @@
         <p><b>replace(searchValue, replaceValue):</b> Replaces occurrences of a specified value in a string with another value.</p>
         <pre>
             <code>
-                let girlFrindName = `cristiane`
-                console.log(girlFrindName.replace(girlFrindName, `camila`)) // logs camila
-                _replace.innerHTML = `When we use the <b>replace() method</b> on the specified value "${girlFrindName}", 
-                                      we replace the same string with another value chosen "${girlFrindName.replace(girlFrindName, 'camila')}"`;
+                let girlFriendName = 'cristiane';
+                console.log(girlFriendName.replace(girlFriendName, 'camila')); // logs camila
+                _replace.innerHTML = `When we use the &lt;b&gt;replace() method&lt;/b&gt; on the specified value "${girlFriendName}", 
+                                      we replace the same string with another value chosen "${girlFriendName.replace(girlFriendName, 'camila')}"`;
+                
             </code>
         </pre>
         <button class="btn" id="btnReplace">Click me!</button>
@@ -160,10 +163,11 @@
                                                                                                                             //function to have as matching arguments on 
                                                                                                                             //"word.charAt(0).toUpperCase() + word.slice(1)" 
     console.log(capitalizedFullName);
-    _map.innerHTML = `The <b>map() method</b> is used to iterate over each word in the array. 
-    For each word: <b>word.charAt(0).toUpperCase()</b> extracts the first character of the word and converts it to uppercase.<br>` 
-    _map.innerHTML += `<b>word.slice(1)</b> extracts the rest of the word starting from the second character.<br>`
-    _map.innerHTML += `<b>The join(' ') method</b> is used to join the capitalized words back into a single string, separated by spaces.`
+    _map.innerHTML = `The &lt;b&gt;map() method&lt;/b&gt; is used to iterate over each word in the array. 
+    For each word: &lt;b&gt;word.charAt(0).toUpperCase()&lt;/b&gt; extracts the first character of the word and converts it to uppercase.<br>` 
+    _map.innerHTML += `&lt;b&gt;word.slice(1)&lt;/b&gt; extracts the rest of the word starting from the second character.<br>`
+    _map.innerHTML += `&lt;b&gt;The join(' ') method&lt;/b&gt; is used to join the capitalized words back into a single string, separated by spaces.`
+    
             </code>
         </pre>
         <button class="btn" id="btnMap">Click me!</button>
@@ -179,10 +183,8 @@
 
 
 
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
-    <script>hljs.highlightAll();</script>
-    <script src="./script.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script>
+        <script src="./script.js" ></script>
 </body>
 </html>
